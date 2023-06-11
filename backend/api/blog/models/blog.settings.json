@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "Blog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "blogImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "author": {
+      "type": "enumeration",
+      "enum": [
+        "Tasfia",
+        "Mansura",
+        "Nubayra",
+        "Ahmed"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "technology",
+        "beauty",
+        "health",
+        "sports",
+        "travel"
+      ]
+    }
+  }
+}

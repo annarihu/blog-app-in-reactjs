@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .nav-link{
+        @apply block font-semibold py-2 text-base 2xl:text-lg text-gray-700 hover:text-gray-400 md:border-none md:p-0;
+    }
+    .blog-div{
+        @apply animate-fade-in-down mt-4 md:my-4 border border-gray-200 shadow-md rounded-md;
+    }
+    .text-title{
+        @apply text-secondary hover:text-primary text-base 2xl:text-lg font-bold;
+    }
+    .text-sub-title{
+        @apply text-gray-600 text-sm 2xl:text-lg font-semibold;
+    }
+    .text-content{
+        @apply text-gray-600 text-sm 2xl:text-lg;
+    }
+
+    .blog-detail-title{
+        @apply text-primary hover:text-primary-light text-lg 2xl:text-xl font-bold;
+    }
+
+    .grid-items:first-child .grid-item{
+        @apply bg-green-200 w-2/3;
+    }
+}
